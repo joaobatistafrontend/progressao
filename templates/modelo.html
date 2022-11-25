@@ -1,0 +1,39 @@
+{% load static %}   
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    {% block titulo %}
+    <title>modelo</title>
+    {% endblock %}
+    {% bootstrap_css %}
+
+</head>
+<body>
+    {% block menu %}
+    <div class="bg-light">
+       Codigo meu menu
+    </div>
+    {% endblock %}
+
+    {% block destaque %}
+    <div class="bg-secondary">
+        figuras e destaque
+    </div>
+    {% endblock %}
+
+    {% block coteudo %}
+    <div class="container">
+        <h3>Template</h3>
+        <p>conteudo</p>
+    </div>
+    {% endblock %}
+
+    {% block rodape %}
+     <div class="bg-light">
+        Rodape
+     </div>
+    {% endblock %}
+</body>
+</html>
