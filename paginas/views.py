@@ -4,7 +4,7 @@ from django.views.generic import TemplateView
 
 
 class PaginaPrincipal(TemplateView):
-    template_name = 'index.html'
+    template_name = 'modelo.html'
 
 class Sobre(TemplateView):
-    template_name = 'modelo.html'
+    template_name = 'sobre.html'
